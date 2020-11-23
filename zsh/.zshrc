@@ -10,4 +10,4 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 alias vi=nvim
 
 # Misc
-bindkey -v
+bindkey -v # Enable vi mode
