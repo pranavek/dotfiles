@@ -1,3 +1,5 @@
+##Lean version 
+
 # Theme
 ZSH_THEME="dst"
 
