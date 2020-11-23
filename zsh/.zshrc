@@ -1,0 +1,8 @@
+# Plugins
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+# Alias
+alias vi=nvim
+
+# Misc
+bindkey -v
