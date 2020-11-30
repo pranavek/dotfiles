@@ -13,3 +13,7 @@ set statusline +=\ %{strftime(\"[%d/%m/%y\ %T]\",getftime(expand(\"%:p\")))}
 set statusline +=%=%-10L
 " Line, column and percentage
 set statusline +=%=%-14.(%l,%c%V%)\ %P
+
+
+" Color 
+hi statusline ctermbg=lightgreen ctermfg=black

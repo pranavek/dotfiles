@@ -1,5 +1,23 @@
-set nu rnu 			" Enable hybrid numbering
-set mouse=a			" Enable mouse
-set autoindent			" Enable autoindent
+
+" =============================================================================
+" # Editor settings
+" =============================================================================
+set nu rnu 			
+set autoindent	
+
+syntax enable
+filetype plugin indent on
+colorscheme monokai
+
+" =============================================================================
+" # GUI settings
+" =============================================================================
+set mouse=a		
+
+
+" =============================================================================
+" # Keyboard shortcuts
+" =============================================================================
+imap jj <Esc>
 
 packadd termdebug

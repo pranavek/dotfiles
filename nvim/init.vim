@@ -8,9 +8,11 @@ call plug#begin(stdpath('data') . '/plugged')
 
 	Plug 'preservim/nerdtree'
 
-	" Coc .config/coc
-	" Rust - https://github.co:m/neoclide/coc-rls
+	" Semantic language support
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+	" Syntactic language support
+	Plug 'rust-lang/rust.vim'
 
 	" Git related stuffs
 	Plug 'tpope/vim-fugitive' 
