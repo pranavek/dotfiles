@@ -4,15 +4,11 @@
 ZSH_THEME="dst"
 
 # Plugins
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-
-function cd_up() {
-  cd $(printf "%0.s../" $(seq 1 $1 ));
-}
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting vi-mode)
 
 # Alias
+alias cl=clear
 alias vi=nvim
-alias 'cd..'='cd_up'
 alias gbc="git branch --show-current"
 
 # Misc
