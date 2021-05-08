@@ -11,7 +11,7 @@ alias cl=clear
 alias vi=nvim
 
 alias gpl="git pull origin `git branch --show-current`" 
-alias gcb="git branch | fzf | xargs git checkout"
+alias gcb="git branch | grep -v `git branch --show-current` | fzf | xargs git checkout"
 alias gph="git push origin HEAD"
 
 # Misc
