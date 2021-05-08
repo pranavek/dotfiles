@@ -7,8 +7,11 @@ ZSH_THEME="dst"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting vi-mode)
 
 # Alias
+alias v=nvim
+alias vi=v
+alias vo='v -o `fzf`'
+
 alias cl=clear
-alias vi=nvim
 
 alias gpl='git pull origin `git branch --show-current`'
 alias gcb='git branch | grep -v `git branch --show-current` | fzf | xargs git checkout'
