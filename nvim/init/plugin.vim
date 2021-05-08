@@ -12,6 +12,10 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'rust-lang/rust.vim'
 
 	" Git related stuffs
-	Plug 'tpope/vim-fugitive' 
+	Plug 'tpope/vim-fugitive'
+	
+	" FZF - take a bow 
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 
 call plug#end()
