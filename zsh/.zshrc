@@ -16,7 +16,7 @@ alias cl=clear
 alias gcb='git branch | grep -v $(git branch --show-current) | fzf | xargs git checkout'
 alias gpl='git pull origin $(git branch --show-current)'
 alias gph='git push origin HEAD'
-alias gle="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # Misc
 bindkey -v # Enable vi mode
