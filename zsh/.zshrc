@@ -12,6 +12,7 @@ alias vi=v
 alias vo='v -o $(fzf)'
 
 alias cl=clear
+alias xo=xdg-open
 
 alias gcb='git branch | grep -v $(git branch --show-current) | fzf | xargs git checkout'
 alias gpl='git pull origin $(git branch --show-current)'
