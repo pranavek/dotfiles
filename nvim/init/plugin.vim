@@ -10,6 +10,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 	" Syntactic language support
 	Plug 'rust-lang/rust.vim'
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 	" Git related stuffs
 	Plug 'tpope/vim-fugitive'
@@ -17,5 +18,10 @@ call plug#begin(stdpath('data') . '/plugged')
 	" FZF - take a bow 
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
+	
+	" Spice up the status line
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	
 
 call plug#end()
