@@ -3,11 +3,11 @@
 " # Editor settings
 " =============================================================================
 set nu rnu 			
-set autoindent	
+set autoindent
+set mouse=a		
 
 syntax enable
 filetype plugin indent on
-silent! colorscheme monokai
 
 " Theme
 set termguicolors
@@ -18,15 +18,12 @@ set showtabline=2
 let g:airline_theme='base16'
 
 " =============================================================================
-" # GUI settings
-" =============================================================================
-set mouse=a		
-
-
-" =============================================================================
 " # Keyboard shortcuts
 " =============================================================================
 let mapleader = ","
 
 imap jj <Esc>
+
+" NERDTree
+:nnoremap <C-g> :NERDTreeToggle<CR>
 
