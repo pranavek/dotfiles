@@ -19,12 +19,13 @@ let g:airline_theme='base16'
 " # Keyboard shortcuts
 " =============================================================================
 let mapleader = ","
-nnoremap <silent><leader>b :Buffers<CR>
-nnoremap <C-p> :Files<Cr>
-nnoremap <C-g> :Rg<Cr>
 
 imap jj <Esc>
 
 " NERDTree
 :nnoremap <C-g> :NERDTreeToggle<CR>
 
+" FZF
+nnoremap <silent><leader>b :Buffers<CR>
+nnoremap <C-p> :Files<Cr>
+nnoremap <C-g> :Rg<Cr>
