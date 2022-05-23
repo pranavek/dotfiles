@@ -36,14 +36,14 @@ def install(program):
         
         distribution = linux_distribution()
         if 'Manjaro' in distribution:
-            r(f'pacman --needed --noconfirm -S {program}')
+            run(f'pacman --needed --noconfirm -S {program}')
         elif 'Ubuntu' in distribution:
-            r(f'apt install {program}')
+            run(f'apt install {program}')
         else:
             raise Exception('Unsupported distribution')
 
     elif os_type == "Darwin":
-        r(f'brew install {program}')
+        run(f'brew install {program}')
     else:
         raise Exception('Unsupported OS')
 
