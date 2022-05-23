@@ -52,7 +52,7 @@ def main():
     print("Detected OS:",os_type)
 
     TEMP_PATH = "/tmp/"
-    BIN_PATH = "~/.local/bin" if os.getenv('INSTALL_DIR') == '' else os.getenv('INSTALL_DIR')
+    BIN_PATH = "/usr/local/bin" if os.getenv('INSTALL_DIR') == '' else os.getenv('INSTALL_DIR')
 
     # Setup noti
     noti_path = download("https://github.com/variadico/noti/releases/download/3.5.0/noti3.5.0.linux-amd64.tar.gz", TEMP_PATH)
