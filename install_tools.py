@@ -5,7 +5,7 @@ import shutil
 def run(command):
     output = subprocess.run(command.split(' '), text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if output.stderr != '':
-        raise Exception(output.stderr)
+        print(output.stderr)
     return output
 
 def r(command):
@@ -36,7 +36,7 @@ def install(program):
         
         distribution = linux_distribution()
         if 'Manjaro' in distribution:
-            r(f'pacman -S {program}')
+            r(f'pacman --needed --noconfirm -S {program}')
         elif 'Ubuntu' in distribution:
             r(f'apt install {program}')
         else:
