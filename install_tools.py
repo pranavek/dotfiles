@@ -3,7 +3,16 @@ import subprocess
 import shutil
 
 def run(command):
-    return subprocess.run(command.split(' '), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    output = subprocess.run(command.split(' '), text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    if output.stderr != '':
+        raise Exception(output.stderr)
+    return output
+
+def r(command):
+    return run(command).stdout.strip("\n")
+
+os_type = r('uname -s')
+
 
 def download(url, path) -> str:
     filename = path + os.path.basename(url)
@@ -17,14 +26,39 @@ def extract(file_name, extract_dir=""):
 def move(src, destination):
     shutil.move(src, destination)
 
+def linux_distribution():
+    return r('lsb_release -a')
+
+def install(program):
+
+    print('Installing ->', program)
+    if os_type == "Linux":
+        
+        distribution = linux_distribution()
+        if 'Manjaro' in distribution:
+            r(f'pacman -S {program}')
+        elif 'Ubuntu' in distribution:
+            r(f'apt install {program}')
+        else:
+            raise Exception('Unsupported distribution')
+
+    elif os_type == "Darwin":
+        r(f'brew install {program}')
+    else:
+        raise Exception('Unsupported OS')
+
+
 def main():
     print("Applying secret sauces")
+    print("Detected OS:",os_type)
 
     TEMP_PATH = "/tmp/"
     BIN_PATH = "~/.local/bin"
 
     # Setup noti
-    file_path = download("https://github.com/variadico/noti/releases/download/3.5.0/noti3.5.0.linux-amd64.tar.gz", TEMP_PATH)
-    extract(file_path, BIN_PATH)
+    noti_path = download("https://github.com/variadico/noti/releases/download/3.5.0/noti3.5.0.linux-amd64.tar.gz", TEMP_PATH)
+    extract(noti_path, BIN_PATH)
+    
+    install('ripgrep')
 
 main()
