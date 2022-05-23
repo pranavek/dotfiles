@@ -6,12 +6,9 @@ def run(command):
     output = subprocess.run(command.split(' '), text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if output.stderr != '':
         print(output.stderr)
-    return output
+    return output.stdout.strip('\n')
 
-def r(command):
-    return run(command).stdout.strip("\n")
-
-os_type = r('uname -s')
+os_type = run('uname -s')
 
 
 def download(url, path) -> str:
