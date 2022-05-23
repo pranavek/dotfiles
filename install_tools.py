@@ -24,7 +24,7 @@ def move(src, destination):
     shutil.move(src, destination)
 
 def linux_distribution():
-    return r('lsb_release -a')
+    return run('lsb_release -a')
 
 def install(program):
 
