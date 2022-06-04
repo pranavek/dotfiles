@@ -20,6 +20,11 @@ set undofile                 "turn on the feature
 silent !mkdir -p ~/.vim/undo
 set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
 
+" Corrections for common mistakes.
+command! W w
+command! Q q
+command! Wq wq
+
 " Theme
 set termguicolors
 let base16colorspace=256  " Access colors present in 256 colorspace
