@@ -46,6 +46,9 @@ def install(program):
     else:
         raise Exception('Unsupported OS')
 
+def configure_keyboard():
+    print()
+    # cp 00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
 
 def main():
     print("Applying secret sauces")
