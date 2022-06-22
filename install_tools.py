@@ -10,7 +10,11 @@ def run(command):
         print(output.stderr)
     return output.stdout.strip('\n')
 
+def linux_distribution():
+    return run('lsb_release -a')
+
 os_type = run('uname -s')
+distro = linux_distribution()
 
 
 def download(url, path) -> str:
@@ -25,18 +29,14 @@ def extract(file_name, extract_dir=""):
 def move(src, destination):
     shutil.move(src, destination)
 
-def linux_distribution():
-    return run('lsb_release -a')
-
 def install(program):
 
     print('Installing ->', program)
     if os_type == "Linux":
         
-        distribution = linux_distribution()
-        if 'Manjaro' in distribution:
+        if 'Manjaro' in distro:
             run(f'pacman --needed --noconfirm -S {program}')
-        elif 'Ubuntu' in distribution:
+        elif 'Ubuntu' in distro:
             run(f'apt install {program}')
         else:
             raise Exception('Unsupported distribution')
@@ -52,7 +52,8 @@ def configure_keyboard():
 
 def main():
     print("Applying secret sauces")
-    print("Detected OS:",os_type)
+    print("Detected OS:", os_type)
+    print("Detected distro:", distro)
 
     TEMP_PATH = "/tmp/"
     BIN_PATH = "/usr/local/bin" if os.getenv('INSTALL_DIR') == '' else os.getenv('INSTALL_DIR')
