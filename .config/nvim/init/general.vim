@@ -17,8 +17,8 @@ filetype plugin indent on
 
 " Persistent undo
 set undofile                 "turn on the feature  
-silent !mkdir -p ~/.vim/undo
-set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+silent !mkdir -p /tmp/.vim/undo
+set undodir=/tmp/.vim/undo  "directory where the undo files will be stored
 
 " Corrections for common mistakes.
 command! W w
