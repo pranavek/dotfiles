@@ -1,5 +1,6 @@
 ## Tools
 - Fish shell
+  - https://github.com/PatrickF1/fzf.fish
 - Tmux
 - Nvim
 - FZF
