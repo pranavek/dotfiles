@@ -9,6 +9,7 @@
 ## Font
 - Default font: Montserrat Bold
 - Default Monospace font: Jetbrains Mono Medium
+- Terminal font: MesloLGS NF
 
 ## Keyboard layout
 ```
