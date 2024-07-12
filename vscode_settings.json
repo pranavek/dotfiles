@@ -1,0 +1,16 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "workbench.activityBar.location": "bottom",
+    "editor.fontSize": 13,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.profiles.osx": {
+        "tmux-shell": {
+            "path": "tmux",
+            "args": ["new-session", "-A", "-s", "vscode:${workspaceFolder}"]
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "tmux-shell"
+}
