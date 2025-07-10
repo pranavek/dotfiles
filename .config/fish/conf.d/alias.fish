@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias ..='cd ..'
 alias ...='cd ../../'
-alias cdf=cd $(find * -type d | fzf)
+alias cdf='cd $(find * -type d | fzf)'
 
 # Git
 alias gru="git remote get-url --all origin"
