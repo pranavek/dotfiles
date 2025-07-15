@@ -1,10 +1,13 @@
 ## Tools
 - Fish shell
   - https://github.com/PatrickF1/fzf.fish
+  - https://github.com/jorgebucaran/autopair.fish
 - Tmux
 - Nvim
 - FZF
 - Ripgrep
+- Cat - https://github.com/sharkdp/bat
+- Delta - https://github.com/dandavison/delta
 
 ## Font
 - Default font: Montserrat Bold
