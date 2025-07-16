@@ -6,7 +6,7 @@
 - Nvim
 - FZF
 - Ripgrep
-- Cat - https://github.com/sharkdp/bat
+- Bat - https://github.com/sharkdp/bat
 - Delta - https://github.com/dandavison/delta
 
 ## Font
