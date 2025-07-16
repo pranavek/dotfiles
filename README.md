@@ -15,6 +15,7 @@
 - Terminal font: MesloLGS NF
 
 ## Keyboard layout
+https://colemakmods.github.io/mod-dh/
 ```
 setxkbmap us -variant colemak_dh
 localectl status
