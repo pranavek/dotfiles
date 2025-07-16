@@ -11,6 +11,8 @@ alias ll='ls -lh --color=auto'
 alias ..='cd ..'
 alias ...='cd ../../'
 alias cdf='cd $(find * -type d | fzf)'
+alias sudop='sudo -E env "PATH=$PATH"'
+alias pubip="curl https://checkip.amazonaws.com"
 
 # Git
 alias gru="git remote get-url --all origin"
@@ -20,8 +22,6 @@ alias gph='git push origin HEAD'
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gst="git status"
 alias gacp='echo "Enter commit message : " && read MSG && git add . && git commit -m "$MSG" && git push origin HEAD
-
-alias sudop='sudo -E env "PATH=$PATH"'
 
 
 
