@@ -1,0 +1,20 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[aws]
+symbol = " "
+style = "bold fg:209"
+
+[directory]
+read_only = " 󰌾"
+style = "bold blue"
+
+[git_branch]
+symbol = " "
+style = "bold green"
+
+[kubernetes]
+disabled = false
+
+[time]
+disabled = true
+time_format = '%H:%M:%S'
