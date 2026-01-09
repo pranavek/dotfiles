@@ -7,6 +7,7 @@
 - FZF
 - Ripgrep
 - Bat - https://github.com/sharkdp/bat
+- Starship - https://starship.rs/
 - Delta - https://github.com/dandavison/delta
 
 ## Font
