@@ -2,18 +2,19 @@
 
 [aws]
 symbol = " "
-style = "bold fg:209"
+style = "bold fg:#FCA17D"
 
 [directory]
 read_only = " 󰌾"
-style = "bold blue"
+style = "bold fg:#DA627D"
 
 [git_branch]
 symbol = " "
-style = "bold green"
+style = "bold fg:#6bd897"
 
 [kubernetes]
 disabled = false
+style = "bold fg:#2596be"
 
 [time]
 disabled = true
