@@ -1,5 +1,5 @@
 ## Tools
-- Fish shell
+- Fish (Shell)
   - https://github.com/PatrickF1/fzf.fish
   - https://github.com/jorgebucaran/autopair.fish
 - Tmux
@@ -7,7 +7,8 @@
 - FZF
 - Ripgrep
 - Bat - https://github.com/sharkdp/bat
-- Starship - https://starship.rs/
+- Starship (Shell Prompt) - https://starship.rs/
+- Ghostty (Terminal Emulator) - https://ghostty.org/
 - Delta - https://github.com/dandavison/delta
 
 ## Font
