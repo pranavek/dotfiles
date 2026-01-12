@@ -1,0 +1,13 @@
+# --- Appearance & Font ---
+theme = "Atom One Dark"
+
+#font-family = "Whatever Nerd Font Mono"
+font-size = 16
+
+# --- Shell & Terminal ---
+shell-integration = fish
+command = /bin/fish
+
+# --- Selection ---
+copy-on-select = true
+
