@@ -7,6 +7,9 @@ style = "bold fg:#FCA17D"
 [directory]
 read_only = " 󰌾"
 style = "bold fg:#DA627D"
+truncate_to_repo = true
+truncation_length = 3
+fish_style_pwd_dir_length = 1
 
 [git_branch]
 symbol = " "
